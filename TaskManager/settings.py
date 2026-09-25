@@ -92,18 +92,24 @@ WSGI_APPLICATION = 'TaskManager.wsgi.application'
 Para jenkins
 
 """
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'PIA_LMP',
+#         'USER': 'root',
+#         #'PASSWORD': 'root',
+#         'PASSWORD': 'ijklmnop582#',
+#         'HOST': 'Database',
+#         'PORT': '3306',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'PIA_LMP',
-        'USER': 'root',
-        #'PASSWORD': 'root',
-        'PASSWORD': 'ijklmnop582#',
-        'HOST': 'Database',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 ALLOWED_HOSTS = ['*']
 
